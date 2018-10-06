@@ -16,7 +16,7 @@
   var map;
   function initMap() {
     // initially the map will be centered on Orlando Florida
-    var orlando = {lat: 28.5383, lng: 81.3792};
+    var orlando = {lat: 28.5383, lng: -81.3792};
     // create the map options object and store it in a variable
     var options = {
       center: orlando,
@@ -25,3 +25,13 @@
     // create a new map object and store it in a variable
     map = new google.maps.Map(document.getElementById("map"), options);
   };
+
+  // create the ajax call that will run the weather api
+  var weatherapiKey = "b10625466a55e27be4ed5f51f5d69c91",
+      queryURL = "http://api.openweathermap.org/data/2.5/weather?q=Orlando&appid=" + weatherapiKey
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response){
+    console.log(response);
+  });
