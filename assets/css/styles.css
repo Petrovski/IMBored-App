@@ -1,8 +1,47 @@
-h1 {
-    color: blue;
+p {
+    color:white;
+    font-family: fantasy;
+    font-size: 100px;
 }
 
+background{
+    width: 50000000px; 
+}
+
+img{
+    align: bottom;
+    margin: 20px
+}
 #map {
     height: 400px;
     width: 100%;
 }
+
+#logo{
+    margin-left: 200px;
+    /* margin-bottom: 100px;  */
+    width: 250px;
+    height: 170px; 
+}
+
+#slogan {
+    text-align: center; 
+    font-family: 'Indie Flower';
+    font-size: 40px; 
+}
+
+    
+body{
+    background: url(../../universe.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    /* background-color:rgb(55, 73, 241);  */
+}
+
+#questions{ 
+    color: white;
+    text-align: center; 
+    font-size: 30px; 
+    /* border-color: black;  */
+}
+    
