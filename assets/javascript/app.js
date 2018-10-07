@@ -1,3 +1,4 @@
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBW_UAyk4RnCZeqPf7ErrFVIu7qjnSxQ1w",
@@ -14,12 +15,12 @@
 
   // create a function that will initialize the map
   var map;
-  function initMap() {
+  function initMap(mapObject) {
     // initially the map will be centered on Orlando Florida
-    var orlando = {lat: 28.5383, lng: -81.3792};
+    var city = {lat: mapObject.coord.lat, lng: mapObject.coord.lon};
     // create the map options object and store it in a variable
     var options = {
-      center: orlando,
+      center: city,
       zoom: 10
     };
     // create a new map object and store it in a variable
@@ -34,4 +35,5 @@
     method: "GET"
   }).then(function(response){
     console.log(response);
+    initMap(response);
   });
