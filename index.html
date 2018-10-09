@@ -10,15 +10,54 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
 </head>
 <body>
-
-    <div class="jumbotron container">
-        <header><h1 id="heading">Welcome to the <strong>IMBored App</strong>!</h1></header>
-        <p>A simple app to help you figure out what to do when you're incredibly bored!</p>
-    </div>
-
-
+    
+     <div class="jumbotron"> 
+        <img id = "logo"src="logo2.png" alt="logo.png" >
+    
+        <style>
+            .jumbotron{
+                background: url("fun2.png") no-repeat center center; 
+            }
+        </style> 
+     
+    <p id="slogan">A simple way to discover the possiblities when you're incredibly bored!</p>
+</div>
     <div id="questions" class="container">
-        <p>What would you like to do?</p>
+            <form action="">
+                Please Enter your zip code: <input type="number" name="zip"><br>
+            </form>
+            <form action="">
+                    How far do you want to travel? 
+                    <br> 
+                    <input type="radio" name="distance" value="5"> 5 miles<br>
+                    <input type="radio" name="distance" value="10"> 10 miles<br>
+                    <input type="radio" name="distance" value="15"> 15 miles<br>
+                    <input type="radio" name="distance" value="20"> 20+ miles
+                </form>
+            
+                <form action="">
+                        Do you want to do something with a fee or free? 
+                        <br> 
+                        <input type="radio" name="price" value="fee"> Fee<br>
+                        <input type="radio" name="price" value="free"> Free<br>
+                </form>
+                <form action="">
+                        Do you want to do something indoor or outdoor? 
+                        <br> 
+                        <input type="radio" name="location" value="indoor"> Indoor<br>
+                        <input type="radio" name="location" value="outdoor"> Outdoor<br>
+                </form>
+                What are your interests?<br> 
+                <input type="checkbox" name="amusementParks" value="Amusement Parks"> Amusement Parks<br>
+                <input type="checkbox" name="sports" value="Sports"> Sports<br>
+                <input type="checkbox" name="nightlife" value="Nightlife"> Nightlife<br>
+                <input type="checkbox" name="shopping" value="Shopping"> Shopping<br>
+                <input type="checkbox" name="food" value="Food"> Food<br>
+                <input type="checkbox" name="interactiveEntertainment" value="interactive entertainment"> Interactive entertainment<br>
+                <input type="checkbox" name="Nature" value="Nature"> Nature<br>
+                <input type="checkbox" name="Educational" value="Educational"> Educational<br> 
+                <input type="checkbox" name="NIghtlife" value="Nightlife"> Nightlife<br>
+
     </div>
 
     <div class="container">
