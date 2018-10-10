@@ -1,47 +1,100 @@
-p {
-    color:white;
-    font-family: fantasy;
-    font-size: 100px;
+div.jumbotron.container {
+    background-color:#9A989D;
 }
 
-background{
-    width: 50000000px; 
-}
 
-img{
-    align: bottom;
-    margin: 20px
-}
 #map {
     height: 400px;
     width: 100%;
+    margin-bottom: 50px;
 }
 
-#logo{
-    margin-left: 200px;
-    /* margin-bottom: 100px;  */
+#questions {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    background: white;
+    /* background: #9A989D; */
+    margin-bottom: 40px;
+    padding: 20px 0px 20px 0px;
+}
+
+.form-check {
+    background: white;
+    /* background: #9A989D; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.questionheader {
+    font-size: 30px;
+}
+
+.form-check-input {
+    height: 18px;
+    width: 18px;
+}
+
+.btn-primary {
+    height: 50px;
     width: 250px;
-    height: 170px; 
+    background: #552DEE;
+    margin-top: 20px;
+}
+
+input.btn.btn-primary::hover {
+    background : rbga(0,0,0,0);
+    color: black;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+img#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 #slogan {
     text-align: center; 
-    font-family: 'Indie Flower';
     font-size: 40px; 
 }
 
-    
-body{
-    background: url(../../universe.jpg);
-    background-repeat: no-repeat;
-    background-size: 2000px;
-    /* background-color:rgb(55, 73, 241);  */
+body {
+    background: linear-gradient(228deg, #7a67c4, #373541, #b2b0b9, #552dee);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+    font-family: Niramit;
 }
 
-#questions{ 
-    color: white;
-    text-align: center; 
-    font-size: 30px; 
-    /* border-color: black;  */
+@-webkit-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
 }
-    
+@-moz-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+
+
+hr {
+    border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color: black;
+  height: 1px;
+}
