@@ -1,42 +1,38 @@
-p {
-    color:white;
-    font-family: fantasy;
-    font-size: 100px;
-    font-style: bold;
-}
-
-background{
-    width: 50000000px; 
-}
-
-img{
-    align: bottom;
-    margin: 20px
-}
-#map {
-    height: 400px;
-    width: 100%;
-}
-
-#logo{
-    margin-left: 200px;
-    /* margin-bottom: 100px;  */
-    width: 250px;
-    height: 170px; 
-}
-
-#slogan {
-    text-align: center; 
-    font-family: 'Indie Flower';
-    font-size: 40px; 
-}
-
+h1#heading {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
     
+}
+.jumbotron {
+    background-position: center;
+    background-size: 100;
+    background-color: grey;
+}
+
+#start {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.container {
+    font-size: 22px;
+    color: green;
+    font-family: 'Permanent Marker' cursive;
+    text-align: left;
+    background-color: white;
+    opacity: 0.6;
+    width: 8500px;
+}
+p {    
+    font-weight: bold;
+}
+
 body {
     width: 100wh;
     height: 90vh;
     color: #fff;
-    background: linear-gradient(-45deg, rgb(84, 43, 237), rgb(74, 95, 190), rgb(133, 126, 159), rgb(49, 53, 41));
+    background: linear-gradient(-45deg, rgb(7, 82, 9), rgb(212, 137, 72), rgb(133, 126, 159), rgb(135, 170, 65));
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -78,12 +74,3 @@ body {
         background-position: 0% 50%
     }
 }
-
-#questions{ 
-    color: white;
-    text-align: center; 
-    font-size: 30px; 
-    font-family: fantasy;
-    /* border-color: black;  */
-}
-    
