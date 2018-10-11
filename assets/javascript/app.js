@@ -23,7 +23,7 @@ function initMap(mapObject) {
     center: city,
     zoom: 10
   };
-
+  
   var marker = new google.maps.Marker({
     position: city,
     map: map,
@@ -36,30 +36,31 @@ function initMap(mapObject) {
 
 // create the ajax call that will run the weather api
 
-$("#submit").on("click", function () {
+  $("#submit").on("click", function () {
 
-  event.preventDefault();
+    event.preventDefault();
 
-  var zipcode = $("#zipcode").val().trim()
-
-  $('html, body').animate({
-    scrollTop: $("#weather").offset().top
-  }, 1000);
-
-  var weatherapiKey = "b10625466a55e27be4ed5f51f5d69c91",
-    queryURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&units=imperial&appid=" + weatherapiKey
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
-    console.log(response);
-    initMap(response);
     
-    var temperature = response.main.temp;
-    var humidity = response.main.humidity;
-    var windspeed = response.wind.speed;
-    var clouds = response.weather[0].description;
-    var pressure = response.main.pressure;
+
+    var zipcode = $("#zipcode").val().trim()
+
+    $('html, body').animate({
+      scrollTop: $("#weather").offset().top
+    }, 1000);
+
+    var weatherapiKey = "b10625466a55e27be4ed5f51f5d69c91",
+      queryURL = "http://api.openweathermap.org/data/2.5/weather?zip="+zipcode+",us&units=imperial&appid=" + weatherapiKey
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+      console.log(response);
+      initMap(response);
+      var temperature = response.main.temp;
+      var humidity = response.main.humidity;
+      var windspeed = response.wind.speed;
+      var clouds = response.weather[0].description;
+      var pressure = response.main.pressure;
 
     var fivemiles = document.getElementById("5miles").checked;
     var tenmiles = document.getElementById("10miles").checked;
@@ -102,7 +103,7 @@ $("#submit").on("click", function () {
       console.log(outdoor);
     } else
 
-      console.log(zipcode);
+    console.log(zipcode);
 
     $("#weather").css("background-color", "white");
     $("#weather").css("border", "5px solid black");
@@ -122,15 +123,7 @@ $("#submit").on("click", function () {
 
     $("#zipcode").val("");
 
-    database.ref().push({
-      zipcode: zipcode,
-      temperature: temperature,
-      humidity: humidity,
-      windspeed: windspeed,
-      clouds: clouds,
-      pressure: pressure,
-      dateAdded: firebase.database.ServerValue.TIMESTAMP
-    });
-  });
-});
 
+
+
+});

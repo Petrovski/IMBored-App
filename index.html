@@ -27,9 +27,6 @@
 
         <div class="container" id="questions">
 
-            <p class="questionheader">Enter your zipcode <input type="text" name="zip" id="location-text"></p>
-            <input type="submit" id="location">
-
             <hr>
 
             <p class="questionheader">How far do you want to travel?</p>
@@ -67,53 +64,6 @@
                         </label>
                     </div>
                 </div>
-
-                <hr>
-
-                <p class="questionheader">Do you want to do something with a fee or free?</p>
-
-                <form action="">
-                    <div class="form-check container">
-                        <div>
-                            <input class="form-check-input" type="radio" name="secondquestion" id="free" value="option1">
-                            <label class="form-check-label" for="exampleRadios1">
-                                Free
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-check container">
-                        <div>
-                            <input class="form-check-input" type="radio" name="secondquestion" id="fee" value="option2">
-                            <label class="form-check-label" for="exampleRadios1">
-                                Fee
-                            </label>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <p class="questionheader">Do you want to do something indoor or outdoor?</p>
-
-                    <div class="form-check container">
-                        <div>
-                            <input class="form-check-input" type="radio" name="thirdquestion" id="indoor" value="option1">
-                            <label class="form-check-label" for="exampleRadios1">
-                                Indoor
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-check container">
-                        <div>
-                            <input class="form-check-input" type="radio" name="thirdquestion" id="outdoor" value="option2">
-                            <label class="form-check-label" for="exampleRadios1">
-                                Outdoor
-                            </label>
-                        </div>
-                    </div>
-                </form>
-
-                <input class="btn btn-primary" type="submit" value="Submit" id="submit">
-
         </div>
 
     </div>
@@ -124,7 +74,7 @@
             <div class="col-md-5" id="weather"></div>
         </div>
     </div>
-
+    
 
     <!-- the link for the firebase database -->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
