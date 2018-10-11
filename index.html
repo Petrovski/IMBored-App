@@ -23,88 +23,91 @@
 
         <div class="container" id="questions">
 
-            <p class="questionheader">Enter your zipcode <input type="text" name="zip"></p>
+            <p class="questionheader">Enter your zipcode <input type="text" name="zip" id="zipcode"></p>
 
             <hr>
 
             <p class="questionheader">How far do you want to travel?</p>
 
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="5miles" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        5 miles
-                    </label>
+            <form action="" id="questionform">
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="firstquestion" id="5miles" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            5 miles
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="10miles" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        10 miles
-                    </label>
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="firstquestion" id="10miles" value="option2">
+                        <label class="form-check-label" for="exampleRadios1">
+                            10 miles
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        15 miles
-                    </label>
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="firstquestion" id="15miles" value="option3">
+                        <label class="form-check-label" for="exampleRadios1">
+                            15 miles
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        20+ miles
-                    </label>
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="firstquestion" id="20miles" value="option4">
+                        <label class="form-check-label" for="exampleRadios1">
+                            20+ miles
+                        </label>
+                    </div>
                 </div>
-            </div>
 
             <hr>
 
             <p class="questionheader">Do you want to do something with a fee or free?</p>
 
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Free
-                    </label>
+            <form action="">
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="secondquestion" id="free" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Free
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Fee
-                    </label>
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="secondquestion" id="fee" value="option2">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Fee
+                        </label>
+                    </div>
                 </div>
-            </div>
             
             <hr>
 
             <p class="questionheader">Do you want to do something indoor or outdoor?</p>
 
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Indoor
-                    </label>
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="thirdquestion" id="indoor" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Indoor
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-check container">
-                <div>
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Outdoor
-                    </label>
+                <div class="form-check container">
+                    <div>
+                        <input class="form-check-input" type="radio" name="thirdquestion" id="outdoor" value="option2">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Outdoor
+                        </label>
+                    </div>
                 </div>
-            </div>
+            </form>
 
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="submit" value="Submit" id="submit">
 
         </div>
 
@@ -112,10 +115,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12" id="map">MAP</div>
+            <div class="col-md-6" id="map"></div>
+            <div class="col-md-5" id="weather"></div>
         </div>
     </div>
-
+    
 
 <!-- the link for the firebase database -->
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
