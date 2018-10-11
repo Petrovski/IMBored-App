@@ -127,12 +127,3 @@ function initMap(mapObject) {
 
 
 });
-
-
-  // database.ref().push({
-  //   zipcode: zipcode,
-  //   destination: destination,
-  //   firsttrain: firsttrain,
-  //   frequency: frequency,
-  //   dateAdded: firebase.database.ServerValue.TIMESTAMP
-  });
