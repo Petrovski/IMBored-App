@@ -1,15 +1,24 @@
-p {
-    color:white;
-    font-family: fantasy;
-    font-size: 100px;
-    font-style: bold;
+div.jumbotron.container {
+    background-color: #ffffff;
+    border: 5px solid black;
 }
-
 
 #map {
     height: 400px;
     width: 100%;
     margin-bottom: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #questions {
@@ -18,14 +27,19 @@ p {
     align-items: center; 
     flex-direction: column;
     background: white;
-    /* background: #9A989D; */
     margin-bottom: 40px;
     padding: 20px 0px 20px 0px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+td {
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
 }
 
 .form-check {
     background: white;
-    /* background: #9A989D; */
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -49,12 +63,6 @@ p {
     margin-top: 20px;
 }
 
-input.btn.btn-primary::hover {
-    background : rbga(0,0,0,0);
-    color: black;
-    box-shadow: inset 0 0 0 3px black;
-}
-
 img#logo {
     display: flex;
     justify-content: center;
@@ -64,64 +72,11 @@ img#logo {
 
 #slogan {
     text-align: center; 
-    font-size: 40px; 
+    font-size: 40px;
+    margin-top: 40px;
 }
 
-    
 body {
-    width: 100wh;
-    height: 90vh;
-    color: #fff;
-    background: linear-gradient(-45deg, rgb(84, 43, 237), rgb(74, 95, 190), rgb(133, 126, 159), rgb(49, 53, 41));
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-#questions{ 
-    color: white;
-    text-align: center; 
-    font-size: 30px; 
-    font-family: fantasy;
-    /* border-color: black;  */
-/*body {
     background: linear-gradient(228deg, #7a67c4, #373541, #b2b0b9, #552dee);
     background-size: 800% 800%;
     -webkit-animation: AnimationName 17s ease infinite;
@@ -146,7 +101,6 @@ body {
     100%{background-position:90% 0%}
 }
 
-
 hr {
     border: 0;
   clear:both;
@@ -154,5 +108,4 @@ hr {
   width: 96%;               
   background-color: black;
   height: 1px;
-*/
 }
