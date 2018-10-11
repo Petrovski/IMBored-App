@@ -47,13 +47,14 @@ $("#submit").on("click", function () {
   }, 1000);
 
   var weatherapiKey = "b10625466a55e27be4ed5f51f5d69c91",
-    queryURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&units=imperial&appid=" + weatherapiKey
+    queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + zipcode + ",us&units=imperial&appid=" + weatherapiKey
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function (response) {
     console.log(response);
     initMap(response);
+    
     var temperature = response.main.temp;
     var humidity = response.main.humidity;
     var windspeed = response.wind.speed;
